@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body, html {
+  height: 100%
+}
+
+.bg {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("pics/offsetbw.jpg");
+
+  /* Full height */
+  height: auto;
+  margin: 0;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+h3, p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(252, 139, 2);
+  font-family: 'Amatic SC', cursive, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 4vw;
+  letter-spacing: 5px;
+  overflow: hidden;
+  background: linear-gradient(100deg, rgb(252, 144, 2), rgb(10, 10, 10), rgb(243, 187, 1));
+  /* background-repeat: no-repeat; */
+  background-size: 83%;
+  animation: animate 6.5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 20px */
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 40px;
+  }
+}
